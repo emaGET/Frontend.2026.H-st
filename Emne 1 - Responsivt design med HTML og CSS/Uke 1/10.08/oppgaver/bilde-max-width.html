@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Picture with max-width</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .containerprova {
+            width: 80%;
+            max-width: 800px;
+            margin: 0 auto;
+            border: 4px solid;
+        }
+
+        .containerprova img {
+            max-width: 100%;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    
+    <div class="containerprova">
+        <h1>Picture with max-width of our one and only.</h1>
+        <p>And now let's see how it behaves</p>
+
+        <img src="images/image.jpg" alt="winstony, with max width">
+
+        <h1>A newer picture with max-width, more classic.</h1>
+        <p>And now let's see how it behaves</p>
+
+        <img src="images/image2.jpg" alt="microscopic silly cat in max-width">
+    </div>
+
+    <p class="desc">with both properties we see our large image shrink to properly fit the container. and for the smaller image, with max-width:100% we get</p>
+    
+</body>
+</html>
