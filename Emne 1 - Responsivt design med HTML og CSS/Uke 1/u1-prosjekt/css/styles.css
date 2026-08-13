@@ -1,14 +1,35 @@
 * {
     box-sizing: border-box;
-}
-
-body {
     margin: 0;
+    padding: 0;
 }
 
-main {
+.container {
+
+    /* border: 2px solid; */
+
     width: 100%;
     max-width: 1224px;
     margin: 0 auto;
     padding: 1.5rem;
+}
+
+.hero {
+    background-color: blue;
+}
+
+.hero .container {
+    background-color: yellow;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
