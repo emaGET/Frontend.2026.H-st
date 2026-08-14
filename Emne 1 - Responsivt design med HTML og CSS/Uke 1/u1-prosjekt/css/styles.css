@@ -50,15 +50,24 @@ body {
     color: #333;
 }
 
-
 main {
-    flex: 1
+    flex: 1;
 }
 
 img {
     max-width: 100%;
     height: auto;
     display: block;
+}
+
+.testimonial-wrapper {
+    container-type: inline-size;
+}
+
+.testimonial-card {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; /*dopo vediamo come aumentare o cosa*/
 }
 
 @media (min-width: 768px) {
@@ -74,4 +83,11 @@ img {
         min-width: 0;
     }
 
+}
+
+@container (min-width: 400px) {
+    .testimonial-card {
+        /* display: flex; */
+        flex-direction: row;
+    }
 }
