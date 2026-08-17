@@ -29,6 +29,12 @@
     padding: 1.5rem;
 }
 
+.footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 2rem;
+}
+
 .hero {
     background-color: blue;
 }
@@ -70,6 +76,13 @@ img {
     gap: 1rem; /*dopo vediamo come aumentare o cosa*/
 }
 
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+    gap: 2rem;
+
+}
+
 @media (min-width: 768px) {
     
     .hero .container {
@@ -81,6 +94,10 @@ img {
     .hero img {
         flex: 1;
         min-width: 0;
+    }
+
+    .footer-grid {
+        grid-template-columns: 2fr 1fr 1fr;
     }
 
 }
