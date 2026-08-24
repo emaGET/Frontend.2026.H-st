@@ -198,6 +198,10 @@ img {
     width: 100%;
 }
 
+/* .tour-card {
+    box-shadow: 
+} */
+
 .tour-tdt {
     grid-area: tdt;
 }
