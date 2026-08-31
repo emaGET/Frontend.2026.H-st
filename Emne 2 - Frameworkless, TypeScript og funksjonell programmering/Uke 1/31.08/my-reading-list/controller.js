@@ -1,4 +1,4 @@
-import { model } from ".7model.js" ;
+import { model } from "./model.js" ;
 import { updateView } from "./view.js" ;
 
 function addBookToReadingList() {

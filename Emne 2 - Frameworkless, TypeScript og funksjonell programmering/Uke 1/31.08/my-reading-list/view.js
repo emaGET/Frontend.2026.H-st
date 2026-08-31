@@ -28,4 +28,8 @@ function updateView() {
         addButton
     )
 
+    app.replaceChildren(bookCard);
+
 }
+
+export { updateView };
