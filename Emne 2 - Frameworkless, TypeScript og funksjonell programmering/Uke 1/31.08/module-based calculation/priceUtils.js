@@ -23,10 +23,10 @@ const vatRate = 0.25;
 
 // const discount = 50;
 
-export function addedVat(price) {
+export function addVat(price) {
     return price * vatRate + price;
 }
 
-export function discountedPrice(price, discount) {
+export function applyFixedDiscount(price, discount) {
     return price - discount;
 }

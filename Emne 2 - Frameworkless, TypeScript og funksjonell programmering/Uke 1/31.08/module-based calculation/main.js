@@ -1,10 +1,10 @@
 import { 
-    addedVat, 
-    discountedPrice 
+    addVat, 
+    applyFixedDiscount 
 } from "./priceUtils.js";
 
 const price = 200; 
 
 console.log(price);
-console.log(addedVat(price));
-console.log(discountedPrice(price, 50));
+console.log(addVat(price));
+console.log(applyFixedDiscount(price, 50));
