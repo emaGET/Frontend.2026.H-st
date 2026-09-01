@@ -14,28 +14,26 @@ function calculateDiscount() {
     }
 
     let newPrice = 0;
+
+    if (selectedDiscount === "percentDiscount") {
+        newPrice = percentDiscount(price);
+    } 
+    
+    else if (selectedDiscount === "fixedDiscount") {
+        newPrice = fixedDiscount(price);
+    }
+
+    else if (selectedDiscount === "percentDiscountWithMax") {
+        newPrice = percentDiscountWithMax(price);
+    }
+
     document.getElementById("result").textContent = `Ny pris: ${newPrice.toFixed(2)} kr`;
 }
 
-console.log(percentDiscount(5000));
-console.log(fixedDiscount(5000));
-console.log(percentDiscountWithMax(1000));
-console.log(percentDiscountWithMax(5000));
-
-// <h1>Rabatt Kalkulator</h1>
-// <label for="price">Pris:</label>
-// <input type="number" id="price" placeholder="Skriv inn pris">
-
-// <label for="discountType">Velg rabattype:</label>
-// <select id="discountType">
-//     <option value="percentDiscount">20 % rabatt</option>
-//     <option value="fixedDiscount">50 kr rabatt</option>
-//     <option value="percentDiscountWithMax">40% rabatt, men maks. rabatt 100kr</option>
-// </select>
-
-// <button onclick="calculateDiscount()">Beregn pris</button>
-
-// <h2 id="result">Ny pris: -</h2> --></input>
+// console.log(percentDiscount(5000));
+// console.log(fixedDiscount(5000));
+// console.log(percentDiscountWithMax(1000));
+// console.log(percentDiscountWithMax(5000));
 
 const app = document.querySelector("#app");
 
@@ -93,3 +91,5 @@ app.replaceChildren(
     calculateButton,
     result
 );
+
+calculateButton.addEventListener("click", calculateDiscount);
