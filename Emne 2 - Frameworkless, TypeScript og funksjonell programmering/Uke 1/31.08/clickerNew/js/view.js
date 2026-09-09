@@ -38,9 +38,20 @@ function updateView() {
 
     smileyDiv.addEventListener("click", doClick);
 
+    const pointsDiv = document.createElement("div");
+    pointsDiv.textContent = `Poeng: ${model.points}` ;
+    
     const app = document.getElementById("app");
 
-    app.replaceChildren(smileyDiv);
+    app.replaceChildren(smileyDiv, pointsDiv);
+
+    if (model.points >= 10) {
+        const upgradeButton = document.createElement("button");
+        upgradeButton.textContent = "Kjøp oppgradering (10 poeng)" ;
+        upgradeButton.addEventListener("click", buyUpgrade);
+
+        app.append(upgradeButton);
+    }
 }
 
 export { updateView };
