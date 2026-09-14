@@ -1,0 +1,12 @@
+{
+  "name": "weatherApp",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node weather.js"
+  },
+  "keywords": [],
+  "type": "module",
+  "dependencies": {
+    "chalk": "^6.0.0"
+  }
+}
